@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons Practice</title>
+
+    <Style>
+        button{
+            cursor: pointer;
+        }
+        
+        .subscribe-button{
+            /*when we put in a tag, we do not need to use the dot, we just put the tag name and CSS will be applied to all same tags*/
+            /*when we put a dot we make a class, when we don't, we target an element (tag name)*/
+            background-color: rgb(200, 0, 0);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 105px;
+            border-radius: 2px;/*measures how much round are the corners of the border*/
+            margin-right: 8px;/*this means leaving space to the right*/
+        }
+    
+        .join-button{
+             background-color: white;
+             border-color: rgb(41, 118, 211);
+             border-style: solid;/*prevents veraiety in border color and shading*/
+             border-width: 1px;
+             color: rgb(41, 118, 211);
+             height: 36px;
+             width: 62px;
+             border-radius: 2px;
+        }
+    
+        .tweet-button{
+            background-color: rgb(2,158,255);
+            color: white;
+            border: none;
+            height: 36px;
+            width: 70px;
+            border-radius: 18px;/*to get a nice round shape, the trick is half of the height*/
+            font-weight: bold;
+            font-size: 14px;
+            margin-left: 8px;
+        }
+    
+        .uber{
+            background-color: black;
+            color: white;
+            height: 36px;
+            width: 120px;
+        }
+        
+        .amazon{
+            background-color: rgb(255, 219, 41);
+            border: none;
+            width: 190px;
+            height: 30px;
+            border-radius: 75px;
+            font-size: 14px;
+        }
+    
+        .github{
+            background-color: rgb(46, 164, 79);
+            color: white;
+            border: none;
+            height: 30px;
+            width: 90px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    
+        .bg{
+            background-color: rgb(121, 82, 179);
+            color: white;
+            height: 32px;
+            width: 105px;
+            border: none;
+            border-radius: 3px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+    
+        .bd{
+            background-color: white;
+            color: rgb(108, 117, 125);
+            border-color: rgb(108, 117, 125);
+            height: 32px;
+            width: 105px;
+            border-style: solid;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+    
+        .la{
+            background-color: rgb(10, 102, 194);
+            border: none;
+            color: white;
+            height: 30px;
+            width: 210px;
+            border-radius: 100px;
+            font-weight: bold;
+        }
+    
+        .ls{
+            background-color: white;
+            color: rgb(10, 102, 194);
+            border-color: rgb(10, 102, 194);
+            height: 30px;
+            width: 70px;
+            margin-left: 10px;
+            border-style: solid;
+            font-weight: bold;
+            border-radius: 35px;
+        }
+    
+        .nike{
+            font-weight: bold;
+            font-size: 30px;
+        }
+    
+        .stock{
+            color: rgb(0, 118, 0);
+            font-weight: bold;
+        }
+    
+        .cart{
+            background-color: rgb(255, 216, 20);
+            border: none;
+            height: 30px;
+            width: 125px;
+            font-size: 14px;
+            border-radius: 45px;
+        }
+    
+        .buy{
+            background-color: rgb(255, 164, 28);
+            margin-left: 10px;
+            border: none;
+            height: 30px;
+            width: 125px;
+            font-size: 14px;
+            border-radius: 45px;
+        }
+    </Style>
+
+</head>
+<body>
+    <button class = "subscribe-button">
+        SUBSCRIBE
+    </button>
+    
+    <button class = "join-button">
+        JOIN
+    </button>
+    
+    <button class = "tweet-button">
+        TWEET
+    </button>
+    <br><br>
+    <button class = "uber">Request now</button>
+    <br><br>
+    <button class = "amazon">Add to Cart</button>
+    <br><br>
+    <button class = "github">Sign up</button>
+    <br><br>
+    <button class = "bg">Get started</button><button class = "bd">Download</button>
+    <br><br>
+    <button class = "la">Apply on company website</button><button class = "ls">Save</button>
+    <br><br><br><br><br><br><br>
+    
+    <a href="https://www.amazon.co.uk/">Back to Amazon</a>
+    <br>
+    <p class = "nike">Nike Black Running Shoes</p>
+    <p class = "stock">$39 - in stock.</p>
+    <p>Free delivery tomorrow</p>
+    <button class = "cart">Add to Cart</button><button class = "buy">Buy now</button>
+</body>
+</html>
+

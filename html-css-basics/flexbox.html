@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Practice</title>
+</head>
+<body style="padding-bottom: 1000px;">
+    <!--flexboxes are very similar to css grid-->
+    <div style="
+        display: flex;
+        flex-direction: row;
+    "><!--they become inline block elements, which means they take as much space as they need-->
+    <!--unlike grid which takes the whole offered space-->
+        <div style="background-color: lightblue;">div 1</div>
+        <div style="background-color: lightpink;">div 2 <p>text</p></div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+    ">
+        <div style="
+            background-color: lightblue;
+            width: 100px;
+        ">100px</div>
+        <div style="
+            background-color: lightpink;
+            flex: 1;
+        "><!--caueses to take up the remaining amount of space-->
+            flex: 1</div>
+    </div>
+
+    <div style="
+        display: flex;
+        flex-direction: row;
+    ">
+        <div style="background-color: lightblue;">div 1</div>
+        <div style="background-color: lightpink;">div 2 <p>text</p></div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+    ">
+        <div style="
+            background-color: lightblue;
+            width: 100px;
+        ">100px</div>
+
+        <div style="
+            background-color: lightpink;
+            flex: 1;
+        ">flex: 1</div>
+
+        <div style="
+            background-color: lightblue;
+            flex: 2;
+        ">flex: 2</div>
+        <!--flex 2 is the equivalent in fr2 in grid-->
+
+        <!--those were the similarities, now come the differences-->
+        <!--grid is ridgid (static), while flexbox is flexible(dynamic)-->
+        <!--the advantages of using flexboxes is with changing components-->
+        <!--for example once you sign in a website, morte icons appear-->
+        <!--which would make it preferable to use flexbox-->
+
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <div style="
+        margin-top: 30px;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: grey;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;/*flex box attribute that lets you center its contents*/
+        /*it varies between start which is default, end, and center*/
+    ">
+        <div style="
+            background-color: lightblue;
+            width: 100px;
+        ">100px</div>
+
+        <div style="
+            background-color: lightpink;
+            Width: 100px;
+        ">100px</div>
+
+        <div style="
+            background-color: lightblue;
+            width: 100px;
+        ">100px</div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: grey;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    ">
+        <div style="
+            background-color: lightblue;
+            width: 100px;
+        ">100px</div>
+
+        <div style="
+            background-color: lightpink;
+            Width: 100px;
+        ">100px</div>
+
+        <div style="
+            background-color: lightblue;
+            width: 100px;
+        ">100px</div>
+    </div>
+
+    <div style="
+        margin-top: 30px;
+        height: 70px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: grey;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;/*this decides how content aligns vertically*/
+        /*default is strech, and it strechs throughout the vertical space */
+        /*start, places at top, end places at bottom, and center*/
+    ">
+        <div style="
+            background-color: lightblue;
+            width: 100px;
+        ">100px</div>
+
+        <div style="
+            background-color: lightpink;
+            Width: 100px;
+        ">100px</div>
+
+        <div style="
+            background-color: lightblue;
+            width: 100px;
+        ">100px</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div style="
+        display: flex;
+    ">
+        <div style=
+            "background-color: lightblue;
+            width: 200px;
+        ">200px</div>
+        <div style="
+            background-color: lightpink;
+            width: 75px;
+        ">75px</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div style="
+        display: flex;
+    ">
+        <div style="
+            background-color: lightblue;
+            width: 50px;
+        ">
+            item1
+        </div>
+        
+        <div style="
+            background-color: lightpink;
+            flex: 1;
+        ">
+            item2
+        </div>
+
+        <div style="
+            background-color: lightblue;
+            width: 75px;
+        ">
+            item3
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div style="
+        display: flex;
+        justify-content: space-between;
+    ">
+        <div style="
+            background-color: lightpink;
+        ">item1</div>
+
+        <div style="
+            background-color: lightpink;
+        ">item2</div>
+
+        <div style="
+            background-color: lightpink;
+        ">item3</div>
+
+        <div style="
+            background-color: lightpink;
+        ">item4</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div style="
+        display: flex;
+        border-color: grey;
+        border-width: 1px;
+        border-style: solid;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+    ">
+        <div style="
+            background-color: lightpink;
+        ">item1</div>
+        <div style="
+            background-color: lightpink;
+        ">item2</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div style="
+        border-width: 1px;
+        border-radius: 3px;
+        border-color: grey;
+        border-style: solid;
+        display: flex;
+        justify-content: space-between;
+        max-width: 500px;
+    ">
+        <div>
+            <p>
+                Home
+            </p>
+
+            <p>
+                Notifications
+            </p>
+
+            <p>
+                Messages
+            </p>
+        </div>
+        <div style="margin-right: 15px;">
+            <p>
+                14
+            </p>
+
+            <p>
+                3
+            </p>
+
+            <p>
+                5
+            </p>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <div style="
+        display: flex;
+    ">
+        <div style="
+            display: flex;
+            background-color: lightpink;
+            width: 70px;
+            align-items: center;
+            color: white;
+            height: 50px;
+            padding-left: 30px;
+        "><span style="background-color: black;">item1</span></div>
+        <div style="
+            background-color: lightblue;
+            width: 200px;
+        "></div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <div style="display: flex;">
+        <div style="
+            background-color: lightpink;
+            width: 100px;    
+        "></div>
+        <div style=
+            "background-color: lightblue;
+            width: 200px;
+        ">
+            <div style="display: inline;">
+                row1
+            </div>
+            <div style="
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: space-between; 
+            ">
+                <div style="background-color: black;">row2</div><div style="background-color: black;">row2</div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

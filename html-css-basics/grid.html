@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Practice</title>
+    
+    <style>
+    .img{
+        width: 100%;
+        display: block;
+    }
+
+    .name{
+        font-weight: bold;
+        margin-left: 7px;
+        margin-top: 10px;
+        font-family: Arial;
+        margin-bottom: 7px;
+    }
+
+.mutual{
+    color: grey;
+    margin-top: 0;
+    margin-left: 7px;
+    margin-bottom: 10px;
+}
+
+.friend{
+    margin-left: 7px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 132, 255);
+    height: 37px;
+    width: 120px;
+    border-radius: 5px;
+}
+
+.sug{
+    height:290px;
+    width: 180px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 50, 0.5);
+    font-family: arial;
+    
+}
+    </style>
+</head>
+<body style="padding-bottom: 1000px;">
+    <div style="
+        display: grid;
+        grid-template-columns: 100px 100px;
+
+    "><!--columns are 2 with 100px wide being both of them-->
+    <!--if we removed one of the column values, it will become a one column grid-->
+    
+        <div style="background-color: lightblue;">div 1</div>
+        <div style="background-color: lightpink;">div 2<p>text</p></div>
+    </div>
+
+    <div style="
+        display: grid;
+        grid-template-columns: 100px 100px 200px;
+        margin-top: 30px;
+    ">
+        <div style="background-color: lightblue;">div 1</div>
+        <div style="background-color: lightpink;">div 2 <p>text</p></div>
+        <div style="background-color: lightblue;">div 1</div>
+        <!--if we put another div, it wraps around to a new row-->
+        <div style="background-color: lightpink;">div 2</div> 
+    </div>
+
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    margin-top: 30px;
+    "><!--fr stands for free space, it expands and shrinks upon window-->
+        <div style="background-color: lightblue;">div 1</div>
+        <div style="background-color: lightpink;">1fr</div>
+    </div>
+
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr;
+    margin-top: 30px;
+    "><!--both fr will take the equal amount of free space-->
+        <div style="background-color: lightblue;">div 1</div>
+        <div style="background-color: lightpink;">1fr</div>
+        <div style="background-color: lightblue;">1fr</div>
+    </div>
+
+    <div style="
+    display: grid;
+    grid-template-columns: 100px 1fr 2fr;
+    margin-top: 30px;
+    "><!--the second fr will take twic as much fr as the first one-->
+        <div style="background-color: lightblue;">div 1</div>
+        <div style="background-color: lightpink;">1fr</div>
+        <div style="background-color: lightblue;">2fr</div>
+    </div>
+
+    <div style="
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    column-gap: 20px;
+    row-gap: 40px;
+    "><!--setting them all to 1fr allows us to resize components easily-->
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightpink; height: 200px;">1fr</div>
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightpink; height: 200px;">1fr</div>
+        <div style="background-color: lightblue; height: 200px;">1fr</div>
+        <div style="background-color: lightpink; height: 200px;">1fr</div>
+    </div>
+    
+    <br><br><br><br><br><br><br>
+
+    <div style="
+        display: grid;
+        grid-template-columns: 200px 75px;
+    ">
+        <div style="background-color: lightblue;">200px</div>
+        <div style="background-color: lightpink;">75px</div>
+    </div>
+
+    <br><br><br><br>
+
+    <div style="
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+    ">
+        <div style="background-color: lightblue;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightblue;">col3</div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <div style=
+        "display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+    ">
+        <div style="background-color: lightblue;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightblue;">col3</div>
+        <div style="background-color: lightpink;">col4</div>
+        <div style="background-color: lightblue;">col1</div>
+        <div style="background-color: lightpink;">col2</div>
+        <div style="background-color: lightblue;">col3</div>
+        <div style="background-color: lightpink;">col4</div>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <div style="
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 20px;
+        align-items: center;
+    ">
+       <div class="sug">
+            <img class = "img" src="cat.jpg">
+            <p class="name">Oliver</p>
+            <p class="mutual">2 mutual friends</p>
+            <button class="friend">Add Friend</button>
+        </div>
+        <div class="sug">
+            <img class="img" src="cat2.jfif">
+            <p class="name">Mimi</p>
+            <p class="mutual">3 mutual friends</p>
+            <button class="friend">Add Friend</button>
+        </div>
+        <div class="sug">
+            <img class="img" src="cat3.jfif">
+            <p class="name">Rex</p>
+            <p class="mutual">4 mutual friends</p>
+            <button class="friend">Add Friend</button>
+        </div>
+    </div>
+</body>
+</html>
